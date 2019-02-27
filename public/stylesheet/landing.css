@@ -1,0 +1,87 @@
+body{
+    background-color:#000;
+}
+
+#landing-header{
+    z-index:1;
+    position:relative;
+    text-align:center;
+    padding-top:40vh;
+}
+#landing-header h1{
+    color:#fff;
+}
+
+.slideshow{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index:0;
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.slideshow li{
+width:100%;
+height:100%;
+position:absolute;
+top:0;
+left:0;
+background-size:cover;
+background-position:50% 50%;
+background-repeat:no-repeat;
+opacity:0;
+z-index:0;
+animation:imageAnimation 50s linear infinite;
+
+}
+
+
+.slideshow li:nth-child(1){
+    background-image:url(https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwign_W0idbgAhUDXSsKHUcIAUsQjRx6BAgBEAU&url=https%3A%2F%2Fwww.tripadvisor.com%2FLocationPhotoDirectLink-g1120583-d10730469-i224273683-Yotagiri_Park_Camping_Ground-Iijima_machi_Kamiina_gun_Nagano_Prefectur.html&psig=AOvVaw2rXuzTE6tsyjFNVfnvmUyx&ust=1551154242121112);
+
+}
+.slideshow li:nth-child(2){
+    background-image:url(https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjomIOMgtbgAhVUeH0KHfevB_sQjRx6BAgBEAU&url=http%3A%2F%2Fcumberlandriver.com.au%2Fphotos%2Fcamping-grounds-images%2F&psig=AOvVaw2rXuzTE6tsyjFNVfnvmUyx&ust=1551154242121112);
+    animation-delay:10s;
+}
+.slideshow li:nth-child(3){
+    background-image:url(https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiB2bWcgtbgAhUWbn0KHS9YAGAQjRx6BAgBEAU&url=https%3A%2F%2Fwww.kennedypark.co.nz%2Faccommodation-options%2Fcampgrounds%2F&psig=AOvVaw2rXuzTE6tsyjFNVfnvmUyx&ust=1551154242121112);
+    animation-delay:20s;
+}
+.slideshow li:nth-child(4){
+    background-image:url(https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjCo5mngtbgAhWKWysKHX9qB8YQjRx6BAgBEAU&url=https%3A%2F%2Fgoseenewzealand.wordpress.com%2F2013%2F10%2F14%2Fcamping-grounds-new-zealand-why-to-experience-and-indulge-in-it%2F&psig=AOvVaw2rXuzTE6tsyjFNVfnvmUyx&ust=1551154242121112);
+    animation-delay:30s;
+}  
+.slideshow li:nth-child(5){
+    background-image:url(https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjumMaugtbgAhWbXn0KHV72AWEQjRx6BAgBEAU&url=https%3A%2F%2Fwww.sigmawifi.com%2Fsigmawifi-case-studies%2Fwestport-camping-grounds-case-study%2F&psig=AOvVaw2rXuzTE6tsyjFNVfnvmUyx&ust=1551154242121112);
+    animation-delay:40s;
+}
+
+@keyframes imageAnimation{
+    0%{
+        opacity:0;
+        animation-timing-function:ease-in;
+    }
+    10%{
+        opacity:1;
+        animation-timing-function:ease-out;
+    }     
+    20%{
+        opacity:1;
+      
+    }
+    30%{
+        opacity:0;
+      
+    }
+  
+}
+
+/*  older browser support-no cssanimation class added by moderizr */
+.no-cssanimations .slideshow li{
+    opacity:1;
+}

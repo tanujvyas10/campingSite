@@ -1,0 +1,23 @@
+img{
+    height:400px;
+    width:300px;
+}
+
+.btn.btn-xs{
+    display:inline;
+}
+
+
+.thumbnail img{
+width:100%;
+}
+.thumbnail{
+    padding:0;
+}
+
+.thumbnail .caption-full{
+    padding:9px;
+}
+/*body{
+    color:whitesmoke;
+}*/

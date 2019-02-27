@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<link rel="stylesheet" href="../stylesheet/style.css" rel="stylesheet">
+        <title>Yelpcamp     </title>
+     <style>
+         
+       /*  .well{
+             background:rgb(230, 224, 224);
+         }*/
+            .theimg{
+                height:300px;
+width:400px;
+            }
+            .mainimg{
+            height:300px;
+width:400px;
+        }
+        </style>
+       
+</head>
+
+<body>
+       
+        <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="/">yelpCamp</a>
+                    </div>
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                         <%  if(!currentlyUser){%>
+                             <li><a href="/login">Login</a></li>
+                            <li><a href="/signup">Sign UP</a></li>
+                        <%}else{%>
+                            <li><a href="/logout">Logout</a></li>
+                       <% } %>
+                        </ul>
+                  
+                </div>
+                </nav>
+                <div class="container">
+                   <% if(error && error.length>0){%>
+                <div class="alert alert-danger" role="alert">
+                        <p><%= error %></p>
+                      </div>
+                    <%}%>
+                      <% if(success &&success.length>0){%>
+                      <div class="alert alert-success" role="alert">
+                            <p><%= success %></p>
+                          </div>
+                        <%}%>
+                    </div>
+     
+ 
