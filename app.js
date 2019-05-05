@@ -304,7 +304,7 @@ passport.authenticate("local")(req,res,function(){
  })
 
 
-//LOGOUT ROUTE
+//LOGOUT ROUTE 
  app.get("/logout",function(req,res){
      req.logout();
      req.flash("success","logged you out!");
